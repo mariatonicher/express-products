@@ -81,7 +81,6 @@ app.put("/products/:id", (req, res) => {
     res.status(404).json({ error: " product not found" });
   }
 });
-//obeter pruduto por id
 
 //delete products
 app.delete("/products/:id", (req, res) => {
