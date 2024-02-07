@@ -1,13 +1,6 @@
-const posts = [
-  {
-    id: 1,
-    title: "express tutotial",
-    content: "lorem ipsum",
-    date: new Date("2020-04-23"),
-    tags: ["tag1", "tag2"],
-  },
-];
 
+/* 
+//create rota , get e post
 function insert(post) {
   const newPost = {
     id: posts.length + 1,
@@ -19,6 +12,4 @@ function insert(post) {
   return newPost;
 }
 
-module.exports = {
-  insert,
-};
+ */
