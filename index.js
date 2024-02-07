@@ -69,8 +69,8 @@ app.get("/products", (req, res) => {
   res.json(products);
 });
 
-//update----
-/*  app.put("/products/:id", (req, res) => {
+//update---- //https://darshan-chauhan.medium.com/crud-create-read-update-and-delete-using-node-js-express-and-react-js-6be05ebcbafe
+app.put("/products/:id", (req, res) => {
   const id = req.params.id;
   const updatedItem = req.body;
 
@@ -81,8 +81,6 @@ app.get("/products", (req, res) => {
     res.status(404).json({ error: " product not found" });
   }
 });
-
- */
 
 //delete products
 app.delete("/products/:id", (req, res) => {
