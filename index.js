@@ -69,8 +69,8 @@ app.get("/products", (req, res) => {
   res.json(products);
 });
 
-//update
-app.put("/products/:id", (req, res) => {
+//update----
+/*  app.put("/products/:id", (req, res) => {
   const id = req.params.id;
   const updatedItem = req.body;
 
@@ -82,6 +82,8 @@ app.put("/products/:id", (req, res) => {
   }
 });
 
+ */
+
 //delete products
 app.delete("/products/:id", (req, res) => {
   const id = req.params.id;
@@ -92,8 +94,4 @@ app.delete("/products/:id", (req, res) => {
   } else {
     res.status(404).json({ error: "User not found" });
   }
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
 });
