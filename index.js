@@ -93,3 +93,10 @@ app.delete("/products/:id", (req, res) => {
     res.status(404).json({ error: "User not found" });
   }
 });
+
+//get by id
+app.get("/products/:id", (req, res) => {
+  let item = products.find((product) => product.id === 2);
+});
+//red v2: filter by title
+
