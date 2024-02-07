@@ -94,9 +94,13 @@ app.delete("/products/:id", (req, res) => {
   }
 });
 
-//get by id
-app.get("/products/:id", (req, res) => {
-  let item = products.find((product) => product.id === 2);
-});
 //red v2: filter by title
-
+app.get("/products/:title", (req, res) => {
+  const title = req.params.title;
+  const product = products.find((product) => product.title === title);
+  if (product) {
+    res.json(product);
+  } else {
+    res.status(404).json({ error: "Product not found" });
+  }
+});
